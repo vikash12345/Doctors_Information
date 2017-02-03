@@ -25,3 +25,29 @@
 // called "data.sqlite" in the current working directory which has at least a table
 // called "data".
 ?>
+<?php
+require 'scraperwiki.php';
+require 'scraperwiki/simple_html_dom.php';
+$MAX_ID = 3;
+
+for($id = 1; $i <= $MAX_ID; $id++)
+{
+ $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=".$id);
+ $html  = file_get_html($MyWebsite);
+
+  foreacg($html->find("//*[@id="Name"]") as $element)
+  {
+    if ($element)
+    {
+      $Name = $element->find(span,0)
+        echo $Name;
+    }
+    
+  }
+  
+}
+?>
+  
+  
+  
+  

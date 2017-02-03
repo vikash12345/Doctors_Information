@@ -1,6 +1,6 @@
 <?php
 require 'scraperwiki.php';
-require 'scraperwiki/simple_html_html.php';
+require 'scraperwiki/simple_html_dom.php';
 
 
 $MAX_ID = 3;

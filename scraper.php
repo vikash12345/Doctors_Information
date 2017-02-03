@@ -30,7 +30,18 @@ require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 $MyWebsite = 'http://www.mciindia.org/ViewDetails.aspx?ID=999';
 $html  = file_get_html($MyWebsite);
-print $html;
+//print $html;
+foreach($html->find("//*[@id='Name']") as $element)
+  {
+    if ($element)
+    {
+      $Name = $element->find(span,0);
+        echo $Name;
+    }
+    
+  }
+  
+}
 
 ?>
   

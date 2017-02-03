@@ -16,13 +16,10 @@ include "simple_html_dom.php";
  $Datereg = $html->find("//span[@id='Date_Reg']", 0);  
 
 
-if ($Name && $FName && $DOB && $$lblinfo && $reginfo && $Datereg) {
-    
+  
    
 echo  $Name . ' -->' . $FName . ' -->' . $DOB  . ' -->' . $lblinfo . ' -->' . $reginfo . ' -->' . $Datereg; 
-    
-   
-   echo '<br/>';
-   }
+echo '<br/>';
+
 
 ?>

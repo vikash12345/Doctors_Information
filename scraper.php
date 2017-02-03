@@ -18,7 +18,7 @@ include "simple_html_dom.php";
 
   
    
-echo  $Name . ' -->' . $FName . ' -->' . $DOB  . ' -->' . $lblinfo . ' -->' . $reginfo . ' -->' . $Datereg; 
+echo  $Name->plaintext . ' -->' . $FName->plaintext . ' -->' . $DOB->plaintext  . ' -->' . $lblinfo->plaintext . ' -->' . $reginfo->plaintext . ' -->' . $Datereg->plaintext; 
 echo '<br/>';
 
 

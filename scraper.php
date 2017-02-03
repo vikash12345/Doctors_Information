@@ -15,6 +15,7 @@ include "simple_html_dom.php";
  $reginfo =  $html->find("//span[@id='Regis_no']", 0);
  $Datereg = $html->find("//span[@id='Date_Reg']", 0);
 
+echo $Name->plaintext;
 
 if ($Name && $FName && $DOB && $$lblinfo && $reginfo && $Datereg) {
     

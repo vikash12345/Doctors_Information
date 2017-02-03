@@ -19,7 +19,7 @@ include "simple_html_dom.php";
 if ($Name && $FName && $DOB && $$lblinfo && $reginfo && $Datereg) {
     
    
-echo  $Name . ' -->' . $FName . ' -->' . $DOBt . ' -->' . $$lblinfo . ' -->' . $reginfo . ' -->' . $Datereg; 
+echo  $Name . ' -->' . $FName . ' -->' . $DOB  . ' -->' . $lblinfo . ' -->' . $reginfo . ' -->' . $Datereg; 
     
    
    echo '<br/>';

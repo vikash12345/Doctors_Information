@@ -35,7 +35,7 @@ for($id = 1; $i <= $MAX_ID; $id++)
  $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=".$id);
  $html  = file_get_html($MyWebsite);
 
-  foreacg($html->find("//*[@id='Name']") as $element)
+  foreach($html->find("//*[@id='Name']") as $element)
   {
     if ($element)
     {

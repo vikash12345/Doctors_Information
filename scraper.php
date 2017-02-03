@@ -8,10 +8,14 @@ $MAX_ID = 3;
 
 ($id = 1; $id <= $MAX_ID; $id++)
 {
-    $html = scraperwiki::scrape("http://www.mciindia.org/ViewDetails.aspx?ID=".$id);
-$dom = new simple_html_dom();
-   $dom->load($html);
- echo $dom;
+    $MyWebsite = 'http://www.mciindia.org/ViewDetails.aspx?ID=999';
+ $html  = file_get_html($MyWebsite);
+ print $html;
   
 }
   ?>
+
+
+
+
+

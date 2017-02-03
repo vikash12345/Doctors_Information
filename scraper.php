@@ -5,7 +5,7 @@ require 'scraperwiki/simple_html_dom.php';
 
 //$MAX_ID = 3;
 
-   $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=".$id);
+   $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=1");
    $html  = file_get_html($MyWebsite);
     
 

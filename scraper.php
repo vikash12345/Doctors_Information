@@ -28,24 +28,10 @@
 <?php
 require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
-$MAX_ID = 3;
+$MyWebsite = 'http://www.mciindia.org/ViewDetails.aspx?ID=999';
+$html  = file_get_html($MyWebsite);
+print $html;
 
-for($id = 1; $i <= $MAX_ID; $id++)
-{
- $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=".$id);
- $html  = file_get_html($MyWebsite);
-
-  foreach($html->find("//*[@id='Name']") as $element)
-  {
-    if ($element)
-    {
-      $Name = $element->find(span,0);
-        echo $Name;
-    }
-    
-  }
-  
-}
 ?>
   
   

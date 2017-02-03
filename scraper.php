@@ -3,7 +3,7 @@ include "simple_html_dom.php";
 
 //$MAX_ID = 3;
 
-   $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=1");
+   $MyWebsite = ("http://www.mciindia.org/ViewDetails.aspx?ID=458");
    $html  = file_get_html($MyWebsite);
     
 
@@ -18,8 +18,15 @@ include "simple_html_dom.php";
 
   
    
-echo  $Name->plaintext . ' -->' . $FName->plaintext . ' -->' . $DOB->plaintext  . ' -->' . $lblinfo->plaintext . ' -->' . $reginfo->plaintext . ' -->' . $Datereg->plaintext; 
-echo '<br/>';
+
+if ($Name || $FName) {
+   echo $Name->plaintext . '<br/>';
+   echo $FName->plaintext . '<br/>';
+   echo $DOB->plaintext . '<br/>';
+   echo $lblinfo->plaintext . '<br/>';
+   echo $reginfo->plaintext . '<br/>';
+   echo $Datereg->plaintext . '<br/>';
+}
 
 
 ?>

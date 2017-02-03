@@ -15,12 +15,12 @@ include "simple_html_dom.php";
  $reginfo =  $html->find("//span[@id='Regis_no']", 0);
  $Datereg = $html->find("//span[@id='Date_Reg']", 0);
 
-echo $Name->plaintext;
+echo $Name;
 
-if ($Name && $FName && $DOB && $$lblinfo && $reginfo && $Datereg) {
+if (isset($Name) && isset($FName) && isset($DOB) && isset($$lblinfo) && isset($reginfo) && isset($Datereg)) {
     
    
-echo  $Name . ' -->' . $FName . ' -->' . $DOBt . ' -->' . $$lblinfo . ' -->' . $reginfo . ' -->' . $Datereg; 
+echo  $Name->plaintext . ' -->' . $FName->plaintext . ' -->' . $DOBt->plaintext . ' -->' . $$lblinfo->plaintext . ' -->' . $reginfo->plaintext . ' -->' . $Datereg->plaintext; 
     
    
    echo '<br/>';

@@ -11,7 +11,7 @@ include "simple_html_dom.php";
  $Name =     $html->find("//span[@id='Name']", 0);
  $FName =    $html->find("//span[@id='FatherName']", 0);
  $DOB =      $html->find("//span[@id='DOB']", 0);
- $lblinfo =  $html->find("//span[@id='lbl_Info']", 0)'
+ $lblinfo =  $html->find("//span[@id='lbl_Info']", 0);
  $reginfo =  $html->find("//span[@id='Regis_no']", 0);
  $Datereg = $html->find("//span[@id='Date_Reg']", 0);  
 

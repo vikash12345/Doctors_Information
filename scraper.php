@@ -5,10 +5,11 @@ require 'scraperwiki/simple_html_dom.php';
 
 //$MAX_ID = 3;
 
+    $html = 'http://www.mciindia.org/ViewDetails.aspx?ID=999';
 
+$dom = new simple_html_dom();
+$dom->load($html);
 
-    $MyWebsite = 'http://www.mciindia.org/ViewDetails.aspx?ID=999';
- $html  = file_get_contents($MyWebsite);
 
 
  echo $html->find("//span[@id='Name']", 0) . '<br/>';

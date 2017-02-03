@@ -15,7 +15,7 @@ require 'scraperwiki/simple_html_dom.php';
  echo $html->find("//span[@id='lbl_Info']", 0) . '<br/>';
  echo $html->find("//span[@id='Regis_no']", 0) . '<br/>';
  echo $html->find("//span[@id='Date_Reg']", 0) . '<br/>';  
-}
+
   ?>
 
 

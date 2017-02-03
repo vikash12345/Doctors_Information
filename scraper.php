@@ -41,7 +41,6 @@ foreach($html->find("//*[@id='Name']") as $element)
     
   }
   
-}
 
 ?>
   

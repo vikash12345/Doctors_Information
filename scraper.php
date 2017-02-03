@@ -8,12 +8,12 @@ include "simple_html_dom.php";
     
 
 
- $Name =     $html->find("//span[@id='Name']", 0) . '<br/>';
- $FName =    $html->find("//span[@id='FatherName']", 0) . '<br/>';
- $DOB =      $html->find("//span[@id='DOB']", 0) . '<br/>';
- $lblinfo =  $html->find("//span[@id='lbl_Info']", 0). '<br/>';
- $reginfo =  $html->find("//span[@id='Regis_no']", 0) . '<br/>';
- $Datereg = $html->find("//span[@id='Date_Reg']", 0) . '<br/>';  
+ $Name =     $html->find("//span[@id='Name']", 0);
+ $FName =    $html->find("//span[@id='FatherName']", 0);
+ $DOB =      $html->find("//span[@id='DOB']", 0);
+ $lblinfo =  $html->find("//span[@id='lbl_Info']", 0);
+ $reginfo =  $html->find("//span[@id='Regis_no']", 0);
+ $Datereg = $html->find("//span[@id='Date_Reg']", 0);
 
 
 if ($Name && $FName && $DOB && $$lblinfo && $reginfo && $Datereg) {

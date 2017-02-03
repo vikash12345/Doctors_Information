@@ -39,7 +39,7 @@ for($id = 1; $i <= $MAX_ID; $id++)
   {
     if ($element)
     {
-      $Name = $element->find(span,0)
+      $Name = $element->find(span,0);
         echo $Name;
     }
     

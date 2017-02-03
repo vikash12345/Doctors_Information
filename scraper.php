@@ -3,7 +3,7 @@ require 'scraperwiki.php';
 require 'scraperwiki/simple_html_dom.php';
 
 
-$MAX_ID = 1;
+$MAX_ID = 3;
 
 
 or($id = 1; $id <= $MAX_ID; $id++)

@@ -8,7 +8,9 @@ require 'scraperwiki/simple_html_dom.php';
 
 
     $MyWebsite = 'http://www.mciindia.org/ViewDetails.aspx?ID=999';
- $html  = file_get_html($MyWebsite);
+ $html  = file_get_contents($MyWebsite);
+
+
  echo $html->find("//span[@id='Name']", 0) . '<br/>';
  echo $html->find("//span[@id='FatherName']", 0) . '<br/>';
  echo $html->find("//span[@id='DOB']", 0) . '<br/>';

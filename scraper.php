@@ -19,7 +19,7 @@ echo $Datereg = $html->find("//span[@id='Date_Reg']", 0) . '<br/>';
 if ($Name && $FName && $DOB && $$lblinfo && $reginfo && $Datereg) {
     
    
-echo  $Name->plaintext . ' -->' . $FName->plaintext . ' -->' . $DOB->plaintext . ' -->' . $$lblinfo->plaintext . ' -->' . $reginfo->plaintext . ' -->' . $Datereg->plaintext; 
+echo  $Name . ' -->' . $FName . ' -->' . $DOBt . ' -->' . $$lblinfo . ' -->' . $reginfo . ' -->' . $Datereg; 
     
    
    echo '<br/>';
